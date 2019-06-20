@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h3
+{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 29px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #ffffff;
+text-align: center;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+input
+{
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 15px;
+letter-spacing: 1px;
+word-spacing: 1px;
+color: #917B81;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+ border: none;
+  border-bottom: 2px solid blue;
+
+}
+input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+ border: none;
+  border-bottom: 2px solid blue;
+
+}
+input[type=Number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+ border: none;
+  border-bottom: 2px solid blue;
+
+}
+input[type=select], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+ border: none;
+  border-bottom: 2px solid blue;
+
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: Tahoma, Geneva, sans-serif;
+font-size: 16px;
+letter-spacing: 1px;
+word-spacing: 1px;
+color: #7C71AD;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+option {
+  font-family:  Tahoma, Geneva, sans-serif;
+font-size:12px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-right: 130px;
+  padding-bottom: 50px;
+  padding-left: 400px;
+  
+}
+input[type=submit]:hover {
+	cursor: pointer;
+	background-color: #45a049;
+
+}
+body
+{
+background: rgb(160,78,215);
+background: linear-gradient(90deg, rgba(160,78,215,1) 14%, rgba(23,153,145,1) 83%);
+}
+form{
+background: rgb(250,247,249);
+background: radial-gradient(circle, rgba(250,247,249,1) 0%, rgba(247,233,245,0.7063200280112045) 100%);
+display: inline-block;
+ }
+</style>
+
+<script>
+function myFunction() {
+  confirm("Course details Saved");
+}
+</script>
+</head>
+<body>
+
+<h3>Submit Course detais</h3>
+
+<div class="container">
+  <form>
+  <table>
+    <tr>
+    <td><label for="fname">First Name<td></label>
+    <td><input type="text" id="fname" name="firstname" placeholder="Your name">
+    </tr>
+    <tr>
+    <td><label for="lname">Last Name<td></label>
+    <td><input type="text" id="lname" name="lastname" placeholder="Your last name">
+	</tr>
+	<tr>
+	<td><label for="empid">Employee ID<td></label>
+    <td><input type="number" id="lname" name="lastname" placeholder="Your Employee ID">
+    </tr>
+    <tr>
+    <td><label for="course">List of courses</label><td>
+
+	
+	<td>
+    <select id="course" name="course">
+      <option value="australia">Java</option>
+      <option value="canada">HTML3/CSS5</option>
+      <option value="usa">Spring Framework</option>
+    </select>
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td><label for="lname">Date of course completion<td></label>
+    <td><input type="Date" id="lname" name="datetime">
+	</tr>
+
+    <tr>
+    <td><input type="submit" onclick="myFunction()" value="Submit Details"><td>
+</tr>
+	
+	</table>
+  </form>
+  
+</div>
+</body>
